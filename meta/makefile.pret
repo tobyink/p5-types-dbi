@@ -1,0 +1,14 @@
+# This file provides instructions for packaging.
+
+@prefix : <http://ontologi.es/doap-deps#>.
+
+`Types-DBI`
+	:runtime-requirement    [ :on "perl 5.008001"^^:CpanId ];
+	:runtime-requirement    [ :on "Type::Tiny 0.008"^^:CpanId ];
+	:runtime-requirement    [ :on "DBI"^^:CpanId ];
+	:test-requirement       [ :on "Test::Modern 0.002"^^:CpanId ];
+	:test-requirement       [ :on "Test::TypeTiny 0.008"^^:CpanId ];
+	:test-requirement       [ :on "DBD::SQLite"^^:CpanId ];
+	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ];
+	.
+
